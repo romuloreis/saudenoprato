@@ -18,3 +18,125 @@ html{
     font-size: 20px;
     text-rendering: optimizeLegibility;
 }
+
+/****************************************/
+/************** HERO HEADER *************/
+/****************************************/
+header{
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(img/img-hero-header.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.slogan{
+    align-self: center;
+    margin-bottom: 20%;
+}
+
+h1{
+    color: #FFF;
+    font-size: 180%;
+    text-transform: uppercase;
+    font-weight: 300;
+    word-spacing: 4px;
+    letter-spacing: 1;
+}
+
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    text-decoration: none;
+    color: #FFF;
+    border: 1px solid #E67E22;
+    padding: 10px 30px;
+    border-radius: 200px;
+    transition: 0.2s;
+}
+
+.btn-full{
+    background-color: #E67E22;
+    margin-right: 10px;
+}
+
+.btn:hover,
+.btn:active{
+    background-color: #CF6D17;
+    border-color: #CF6D17;
+}
+
+/****************************************/
+/********* MENU HERO HEADER *************/
+/****************************************/
+.logo{
+    height: 100px;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px 10px;
+    padding-left: 30px;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-around;
+    width: 650px;
+    list-style-type: none;
+}
+
+header ul li a:link,
+header ul li a:visited{
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+    padding-bottom: 5px;
+}
+
+header ul li a:hover,
+header ul li a:active{
+    border-bottom: 2px solid #E67E22;
+}
+
+/****************************************/
+/********* SEÇÃO INFORMAÇÕES ************/
+/****************************************/
+.section-information{
+    padding: 80px 0;
+}
+
+h2{
+    font-size: 180%;
+    text-transform: uppercase;
+    font-weight: 300;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2::after{
+    content: " ";
+    height: 2px;
+    width: 100px;
+    background-color: #E67E22;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.info-top p{
+    width: 70%;
+    margin: 0 auto;
+    line-height: 145%;
+}
