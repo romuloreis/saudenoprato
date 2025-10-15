@@ -114,6 +114,11 @@ header ul li a:active{
     border-bottom: 2px solid var(--laranja-claro);
 }
 
+.mobile-nav-icon:link,
+.mobile-nav-icon:visited{
+    display: none;
+}
+
 /****************************************/
 /********* SEÇÃO INFORMAÇÕES ************/
 /****************************************/
@@ -262,8 +267,6 @@ footer{
     flex-wrap: wrap;
 }
 
-/* ola */
-
 .footer-top ul{
     list-style-type: none;
     display: flex;
@@ -304,3 +307,24 @@ footer{
     text-align: center;
     margin-top: 20px;
 }
+
+/****************************************/
+/************* MEDIA QUERY ***************/
+/****************************************/
+@media only screen and (max-width: 800px){
+    .mobile-nav-icon:link,
+    .mobile-nav-icon:visited{
+        display: block;
+        align-self: flex-end;
+    }
+
+    header nav ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        display: none;
+    }
+}
+
+
+
